@@ -54,7 +54,7 @@
             <!-- Begin - logo -->
             <a href="<?php echo $front_page; ?>" class="simple-navigation-logo-link">
                 <img src="<?php echo $path_img . '/logo-simple-navigation.png'; ?>" class="simple-navigation-logo-image"
-                     alt="<?php echo t('lydstudietaros.dk logo'); ?>"/>
+                     alt="<?php echo t('respons.link logo'); ?>"/>
             </a>
             <!-- End - logo -->
 
