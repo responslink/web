@@ -2,8 +2,8 @@
 ;; Theme information
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-name        = 'Lydstudietaros.dk'
-description = 'Beautiful theme for lydstudietaros.dk.'
+name        = 'Respons.link'
+description = 'Beautiful theme for respons.link.'
 core        = '7.x'
 screenshot  = 'dist/img/screenshot.png'
 base theme  = 'bellcom'

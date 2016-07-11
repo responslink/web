@@ -3,7 +3,7 @@
 /**
  * Implements theme_preprocess_html().
  */
-function la_preprocess_html(&$variables) {
+function rl_preprocess_html(&$variables) {
   $theme_path = path_to_theme();
 
   // Add conditional stylesheets
@@ -43,7 +43,7 @@ function la_preprocess_html(&$variables) {
 /*
  * Implements theme_preprocess_page().
  */
-function la_preprocess_page(&$variables) {
+function rl_preprocess_page(&$variables) {
   $current_theme = variable_get('theme_default','none');
   $primary_navigation_name = variable_get('menu_main_links_source', 'main-menu');
   $secondary_navigation_name = variable_get('menu_secondary_links_source', 'user-menu');
@@ -61,7 +61,7 @@ function la_preprocess_page(&$variables) {
 /**
  * Implements template_preprocess_node.
  */
-function la_preprocess_node(&$variables) {
+function rl_preprocess_node(&$variables) {
   $node = $variables['node'];
   $variables['hero_class'] = 'os2-hero-without-image';
 
@@ -90,14 +90,14 @@ function la_preprocess_node(&$variables) {
  * Implements template_preprocess_node().
  * Content type: page.
  */
-function la_preprocess_node__page(&$variables) {
+function rl_preprocess_node__page(&$variables) {
   $node = $variables['node'];
 }
 
 /*
  * Implements template_preprocess_comment().
  */
-function la_preprocess_comment(&$variables) {
+function rl_preprocess_comment(&$variables) {
 
   // Author
   if ($author_information = bellcom_user_get_raw_information($variables['comment']->uid)) {
@@ -111,20 +111,20 @@ function la_preprocess_comment(&$variables) {
 /*
  * Implements template_node_view_alter().
  */
-function la_node_view_alter(&$build) {
+function rl_node_view_alter(&$build) {
 }
 
 /*
  * Full node
  * Implements hook_preprocess_node().
  */
-function la_preprocess_node__full(&$variables) {
+function rl_preprocess_node__full(&$variables) {
 }
 
 /*
  * Implements template_preprocess_taxonomy_term().
  */
-function la_preprocess_taxonomy_term(&$variables) {
+function rl_preprocess_taxonomy_term(&$variables) {
   $term = $variables['term'];
 
   // Add taxonomy-term--view_mode.tpl.php suggestions.
@@ -151,7 +151,7 @@ function la_preprocess_taxonomy_term(&$variables) {
 /*
  * Implements hook_form_alter().
  */
-function la_form_alter(&$form, &$form_state, $form_id) {
+function rl_form_alter(&$form, &$form_state, $form_id) {
 
   switch ($form_id)  {
     // User login
@@ -173,6 +173,6 @@ function la_form_alter(&$form, &$form_state, $form_id) {
 /*
  * Implements hook_classy_paragraphs_list_options().
  */
-function la_classy_paragraphs_list_options(&$variables) {
+function rl_classy_paragraphs_list_options(&$variables) {
 
 }
