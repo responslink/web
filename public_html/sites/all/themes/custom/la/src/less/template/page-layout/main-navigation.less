@@ -1,0 +1,32 @@
+.inner-wrapper {
+
+   .content {
+     padding-top: @bs3-main-navigation-height;
+   }
+ }
+
+body {
+
+  &.front,
+  &.page-node {
+
+    &:not(.page-node-edit):not(.page-node-add) {
+
+      .main-navigation-wrapper {
+
+        .main-navigation-bar {
+          background-color: transparent;
+          background-image: url('../img/background-main-navigation.png');
+          background-repeat: repeat-x;
+        }
+      }
+
+      .inner-wrapper {
+
+        .content {
+          padding-top: 0;
+        }
+      }
+    }
+  }
+}

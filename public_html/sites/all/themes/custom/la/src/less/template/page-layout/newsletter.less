@@ -1,0 +1,154 @@
+// |--------------------------------------------------------------------------
+// | Newsletter
+// |--------------------------------------------------------------------------
+// |
+// | This file contains styles for the following:
+// | - .newsletter
+// |
+
+// --------------------------------------------------
+// Variables
+// --------------------------------------------------
+
+@newsletter-xs-padding-top-bottom:   45px;
+@newsletter-sm-padding-top-bottom:   60px;
+@newsletter-md-padding-top-bottom:   80px;
+@newsletter-lg-padding-top-bottom:   80px;
+
+// --------------------------------------------------
+// Styling
+// --------------------------------------------------
+
+// Newsletter
+.newsletter {
+  background-image: url("../img/mosaiq-background.jpg");
+  background-position: center center;
+  .background-cover;
+
+  .newsletter-heading {
+    text-align: center;
+    padding-bottom: 10px;
+
+    .newsletter-heading-title {
+      display: inline-block;
+      position: relative;
+      color: #fff;
+      font-weight: @headings-font-weight-semi-bold;
+      padding-bottom: 8px;
+    }
+  }
+
+  form {
+    max-width: 360px;
+    margin: auto;
+
+    .control-label {
+      display: none;
+    }
+
+    .form-actions {
+      padding-top: 15px;
+      text-align: center;
+
+      .btn {
+        .btn-dark;
+      }
+    }
+  }
+}
+
+// --------------------------------------------------
+// Responsive
+// --------------------------------------------------
+
+// Mobile
+@media @media-query-mobile {
+
+  // Newsletter
+  .newsletter {}
+}
+
+// Mobile - only
+@media @media-query-mobile-only {
+
+  // Newsletter
+  .newsletter {
+    padding: @newsletter-xs-padding-top-bottom 0;
+  }
+}
+
+// Tablet
+@media @media-query-tablet {
+
+  // Newsletter
+  .newsletter {}
+}
+
+// Tablet - only
+@media @media-query-tablet-only {
+
+  // Newsletter
+  .newsletter {
+    padding: @newsletter-sm-padding-top-bottom 0;
+  }
+}
+
+// Desktop
+@media @media-query-desktop {
+
+  // Newsletter
+  .newsletter {}
+}
+
+// Desktop - only
+@media @media-query-desktop-only {
+
+  // Newsletter
+  .newsletter {
+    padding: @newsletter-md-padding-top-bottom 0;
+  }
+}
+
+// Large desktop
+@media @media-query-large-desktop {
+
+  // Newsletter
+  .newsletter {}
+}
+
+// Large desktop - only
+@media @media-query-large-desktop-only {
+
+  // Newsletter
+  .newsletter {
+    padding: @newsletter-lg-padding-top-bottom 0;
+  }
+}
+
+// Print
+@media print {
+
+  // Newsletter
+  .newsletter {}
+}
+
+// Touch
+.touchevents {
+
+  // Newsletter
+  .newsletter {}
+}
+
+// No touch
+.no-touchevents {
+
+  // Newsletter
+  .newsletter {}
+}
+
+// --------------------------------------------------
+// Mixins
+// --------------------------------------------------
+
+// Newsletter mixin
+.mixin-newsletter() {}

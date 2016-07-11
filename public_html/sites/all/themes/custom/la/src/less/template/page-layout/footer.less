@@ -1,0 +1,247 @@
+// |--------------------------------------------------------------------------
+// | Footer
+// |--------------------------------------------------------------------------
+// |
+// | This file contains styles for the following:
+// | - .footer
+// |
+
+// --------------------------------------------------
+// Variables - footer top
+// --------------------------------------------------
+
+@footer-background-color: @gray-base;
+@footer-font-size: @font-size-small;
+@footer-font-color: #fff;
+@footer-link-font-color: @footer-font-color;
+@footer-headings-font-color: lighten(@footer-background-color, 30%);
+
+// Responsive
+@footer-xs-inner-top-bottom-padding: 40px;
+@footer-sm-inner-top-bottom-padding: 50px;
+@footer-md-inner-top-bottom-padding: 70px;
+@footer-lg-inner-top-bottom-padding: 70px;
+
+// --------------------------------------------------
+// Styling
+// --------------------------------------------------
+
+// Footer
+.footer {
+  border-top: 0;
+}
+
+.footer-copyright {
+  padding: 0;
+  border: 0;
+  background-color: @footer-background-color;
+  text-align: center;
+
+  p {
+    margin-bottom: 0;
+  }
+
+  &,
+  p {
+    color: @footer-font-color;
+  }
+
+  a {
+
+    &,
+    &:hover {
+      color: @footer-link-font-color;
+    }
+  }
+
+  .heading-h1,
+  .heading-h2,
+  .heading-h3,
+  .heading-h4,
+  .heading-h5,
+  .heading-h6,
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 6px;
+    font-family: @font-family-base;
+    font-size: @font-size-large;
+    .line-height(@font-size-large);
+    color: @footer-headings-font-color;
+    letter-spacing: 0;
+    font-weight: @font-weight-bold;
+  }
+
+  .footer-menu-wrapper {
+
+    .nav {
+      .list-inline;
+
+      > li {
+
+        > a {
+          padding: 0 10px;
+          font-size: @font-size-small;
+          font-weight: @font-weight-semi-bold;
+          text-transform: uppercase;
+
+          &,
+          &:hover {
+            color: @footer-font-color;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-copyright-wrapper {
+    padding: 20px 0;
+  }
+
+  .footer-scroll-to-top-wrapper {
+    padding-top: 5px;
+
+    .scroll-to-top {
+      display: inline-block;
+      padding: 6px 10px;
+      border: 1px solid @brand-primary;
+      color: #fff;
+    }
+  }
+}
+
+// --------------------------------------------------
+// Responsive
+// --------------------------------------------------
+
+// Mobile
+@media @media-query-mobile {
+
+  // Footer
+  .footer-copyright {}
+}
+
+// Mobile - only
+@media @media-query-mobile-only {
+
+  // Footer
+  .footer-copyright {
+
+    .footer-copyright-inner {
+      padding: @footer-xs-inner-top-bottom-padding 0;
+    }
+
+    .region {
+
+      .row {
+
+        &:first-child {
+          margin-bottom: 20px;
+        }
+
+        > div {
+
+          &:first-child {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Tablet
+@media @media-query-tablet {
+
+  // Footer
+  .footer-copyright {
+
+    .region {
+
+      .row {
+
+        &:first-child {
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+}
+
+// Tablet - only
+@media @media-query-tablet-only {
+
+  // Footer
+  .footer-copyright {
+
+    .footer-copyright-inner {
+      padding: @footer-sm-inner-top-bottom-padding 0;
+    }
+  }
+}
+
+// Desktop
+@media @media-query-desktop {
+
+  // Footer
+  .footer-copyright {}
+}
+
+// Desktop - only
+@media @media-query-desktop-only {
+
+  // Footer
+  .footer-copyright {
+
+    .footer-copyright-inner {
+      padding: @footer-md-inner-top-bottom-padding 0;
+    }
+  }
+}
+
+// Large desktop
+@media @media-query-large-desktop {
+
+  // Footer
+  .footer-copyright {}
+}
+
+// Large desktop - only
+@media @media-query-large-desktop-only {
+
+  // Footer
+  .footer-copyright {
+
+    .footer-copyright-inner {
+      padding: @footer-lg-inner-top-bottom-padding 0;
+    }
+  }
+}
+
+// Print
+@media print {
+
+  // Footer
+  .footer-copyright {}
+}
+
+// Touch
+.touchevents {
+
+  // Footer
+  .footer-copyright {}
+}
+
+// No touch
+.no-touchevents {
+
+  // Footer
+  .footer-copyright {}
+}
+
+// --------------------------------------------------
+// Mixins
+// --------------------------------------------------
+
+// Footer mixin
+.footer-mixin() {}

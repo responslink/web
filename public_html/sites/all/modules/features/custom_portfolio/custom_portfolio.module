@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Portfolio feature.
+ */
+
+include_once 'custom_portfolio.features.inc';

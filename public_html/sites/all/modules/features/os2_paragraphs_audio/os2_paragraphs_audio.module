@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Audio feature.
+ */
+
+include_once 'os2_paragraphs_audio.features.inc';

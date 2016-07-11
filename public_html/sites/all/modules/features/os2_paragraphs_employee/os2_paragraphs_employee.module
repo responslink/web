@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Employee feature.
+ */
+
+include_once 'os2_paragraphs_employee.features.inc';

@@ -1,0 +1,236 @@
+
+.bsg-player {
+
+  height: 99px;
+  background-color: #272727;
+  bottom: 0;
+  transition: position 500ms ease;
+
+  &.fix-bottom, &.stuck {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+  .container {
+    padding: 0;
+  }
+  .player-buttons {
+    width: 134px;
+    height: 99px;
+    background-color: #1C1C1C;
+    font-size: 13px;
+    padding-top: 20px;
+    padding-left: 15px;
+    float: left;
+    margin-bottom: 0;
+    li {
+      padding: 0;
+    }
+    .previous a, .next a {
+      display: inline-block;
+      width: 30.15625px;
+      height: 30.15625px;
+      background-color: #33B5E5;
+      color: #FFFFFF;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 30px;
+      font-size: 13px;
+      margin: 0;
+
+    }
+    .next a {
+      margin-left: -7px;
+    }
+    .play a {
+      display: inline-block;
+      width: 48px;
+      height: 48px;
+      background-color: #33B5E5;
+      color: #FFFFFF;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 16px;
+      line-height: 48px;
+      margin-left: -7px;
+    }
+  }
+
+  .album-details {
+
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    //width: 280px;
+    float: left;
+    .album-art {
+      float: left;
+      img {
+        width: 80px;
+        height: 80px !important;
+      }
+    }
+    .album-info {
+      float: left;
+      margin-left: 10px;
+      h4.title {
+        color: #FFF;
+        font-family: @font-family-base;
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0;
+        width: 120px;
+        height: 26px;
+        line-height: 26px;
+        overflow: hidden;
+        .js-marquee {
+          white-space: nowrap;
+          -webkit-backface-visibility: hidden;
+          -moz-backface-visibility: hidden;
+          -ms-backface-visibility: hidden;
+          backface-visibility: hidden;
+
+        }
+      }
+      .price {
+        color: #FFF;
+        font-family: @font-family-base;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+      .author {
+        color: #B6B6B6;
+        font-family: @font-family-base;
+        font-size: 11px;
+        font-weight: 500;
+        text-transform: uppercase;
+        width: 120px;
+        height: 20px;
+        line-height: 20px;
+        overflow: hidden;
+      }
+      .album-year {
+        color: #FFF;
+        font-family: @font-family-serif;
+        font-size: 13px;
+        font-weight: 200;
+
+        span {
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  .player-seek {
+    border-left: 1px solid #3a3a3a;
+    border-right: 1px solid #3a3a3a;
+    height: 99px;
+    padding-left: 25px;
+    padding-right: 25px;
+    float: left;
+    width: 528px;
+
+    .progress {
+      width: 80% !important;
+      float: left !important;
+      height: 14px;
+      background-color: #020202;
+      margin-top: 41px;
+      border-radius: 0;
+      .progress-bar {
+        background-color: #33B5E5;
+      }
+
+      .jp-seek-bar {
+        background-color: #020202 !important;
+        width: 0;
+        height: 100%;
+        cursor: pointer;
+      }
+      .jp-play-bar {
+        background-color: #33B5E5 !important;
+        width: 0;
+        height: 100%;
+      }
+
+      /* The seeking class is added/removed inside jPlayer */
+      .jp-seeking-bg {
+        background-color: yellow !important;
+      }
+    }
+    .time {
+      display: inline-block;
+      padding-left: 15px;
+      line-height: 96px;
+      color: #FFF;
+      font-family: @font-family-serif;
+      font-size: 12px;
+      font-weight: 400;
+      div {
+        display: inline-block;
+      }
+    }
+  }
+
+  .player-options {
+    float: left;
+    line-height: 39px;
+    border-right: 1px solid #3a3a3a;
+    .playlist, .mute-toggle a {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 10px;
+      color: #FFF;
+      font-size: 14px;
+      outline: none;
+      a {
+        color: #FFFFFF;
+      }
+    }
+
+    .playlist .cart-number {
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      background-color: #33B5E5;
+      text-align: center;
+      line-height: 15px;
+      border-radius: 50%;
+      margin-top: -3px;
+      font-size: 10px;
+      color: #FFFFFF;
+    }
+
+  }
+  .buy-buttons {
+    float: left;
+    width: 173.84375px;
+    height: 99px;
+    background-color: #1C1C1C;
+    padding: 10px;
+    z-index: 999;
+    .btn {
+      border-radius: 0;
+      color: #FFF;
+      font-family: @font-family-base;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+
+      &.btn-buy {
+        background-color: #99CB00;
+        border-color: #99CB00;
+        margin-top: 5px;
+
+      }
+      &.btn-details {
+        margin-top: 10px;
+        background-color: #33B5E5;
+        border-color: #33B5E5;
+      }
+    }
+  }
+
+}

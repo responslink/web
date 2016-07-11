@@ -1,0 +1,310 @@
+// |--------------------------------------------------------------------------
+// | Layout
+// |--------------------------------------------------------------------------
+// |
+// | This file contains styles for the following:
+// | - .os2-paragraphs-item
+// |
+
+// --------------------------------------------------
+// Variables
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Styling
+// --------------------------------------------------
+
+// Layout
+.os2-paragraphs-item {
+
+  // Heading and subheading
+  .os2-paragraphs-item-heading-wrapper {
+
+    // Heading
+    .os2-paragraphs-item-heading {
+      font-size: @os2-paragraphs-item-heading-font-size;
+      .line-height-heading(@os2-paragraphs-item-heading-font-size);
+      font-weight: @os2-paragraphs-item-heading-font-weight;
+
+      // Stacked spacing
+      + .os2-paragraphs-item-subheading {
+        padding-top: @os2-paragraphs-item-heading-subheading-stacked-spacing;
+      }
+    }
+
+    // Subheading
+    .os2-paragraphs-item-subheading {
+      font-size: @os2-paragraphs-item-subheading-font-size;
+      .line-height-heading(@os2-paragraphs-item-subheading-font-size);
+      font-weight: @os2-paragraphs-item-subheading-font-weight;
+    }
+  }
+
+  // Stacked
+  .os2-paragraphs-item-heading-wrapper {
+
+    + .os2-paragraphs-item-column-wrapper {
+      padding-top: @os2-paragraphs-item-column-stacked-spacing;
+    }
+
+    + .os2-paragraphs-item-action-link-wrapper {
+      padding-top: @os2-paragraphs-item-action-link-stacked-spacing;
+    }
+  }
+
+  .os2-paragraphs-item-column-wrapper {
+
+    + .os2-paragraphs-item-action-link-wrapper {
+      padding-top: @os2-paragraphs-item-action-link-stacked-spacing;
+    }
+  }
+
+  // Action link
+  .os2-paragraphs-item-action-link-wrapper {
+
+    .os2-paragraphs-item-action-link {
+
+      a {
+
+        &,
+        &:hover {
+          .btn;
+          .btn-lg;
+          .btn-rounded;
+        }
+      }
+    }
+  }
+
+  // Parallax and background image
+  &.eb-image,
+  &.eb-parallax {
+    background-color: transparent;
+  }
+
+  &.eb-image {
+    .background-cover;
+  }
+
+  &.eb-parallax {
+    .background-parallax;
+  }
+
+  // Owl Carousel
+}
+
+// --------------------------------------------------
+// Variants
+// --------------------------------------------------
+
+// Default
+.paragraphs-state-default {
+  background-color: @state-default-bg;
+
+  .os2-mixin-paragraphs-item-layout-variant-typography(@state-default-heading, @state-default-subheading, @state-default-text, @state-default-link);
+}
+
+// Light
+.paragraphs-state-light {
+  background-color: @state-light-bg;
+
+  .os2-mixin-paragraphs-item-layout-variant-typography(@state-light-heading, @state-light-subheading, @state-light-text, @state-light-link);
+}
+
+// Dark
+.paragraphs-state-dark {
+  background-color: @state-dark-bg;
+
+  .os2-mixin-paragraphs-item-layout-variant-typography(@state-dark-heading, @state-dark-subheading, @state-dark-text, @state-dark-link);
+}
+
+// Primary
+.paragraphs-state-primary {
+  background-color: @state-primary-bg;
+
+  .os2-mixin-paragraphs-item-layout-variant-typography(@state-primary-heading, @state-primary-subheading, @state-primary-text, @state-primary-link);
+}
+
+// Secondary
+.paragraphs-state-secondary {
+}
+
+// Tertiary
+.paragraphs-state-tertiary {
+}
+
+// Quaternary
+.paragraphs-state-quaternary {
+}
+
+// Quinary
+.paragraphs-state-quinary {
+}
+
+// --------------------------------------------------
+// Responsive
+// --------------------------------------------------
+
+// Mobile
+@media @media-query-mobile {
+
+  // Layout
+  .os2-paragraphs-item {}
+}
+
+// Mobile - only
+@media @media-query-mobile-only {
+
+  // Layout
+  .os2-paragraphs-item {
+
+    .os2-paragraphs-item-inner-wrapper {
+      padding: @os2-paragraphs-item-xs-padding-top-bottom 0;
+    }
+  }
+}
+
+// Tablet
+@media @media-query-tablet {
+
+  // Layout
+  .os2-paragraphs-item {}
+}
+
+// Tablet - only
+@media @media-query-tablet-only {
+
+  // Layout
+  .os2-paragraphs-item {
+
+    .os2-paragraphs-item-inner-wrapper {
+      padding: @os2-paragraphs-item-sm-padding-top-bottom 0;
+    }
+  }
+}
+
+// Desktop
+@media @media-query-desktop {
+
+  // Layout
+  .os2-paragraphs-item {}
+}
+
+// Desktop - only
+@media @media-query-desktop-only {
+
+  // Layout
+  .os2-paragraphs-item {
+
+    .os2-paragraphs-item-inner-wrapper {
+      padding: @os2-paragraphs-item-md-padding-top-bottom 0;
+    }
+  }
+}
+
+// Large desktop
+@media @media-query-large-desktop {
+
+  // Layout
+  .os2-paragraphs-item {}
+}
+
+// Large desktop - only
+@media @media-query-large-desktop-only {
+
+  // Layout
+  .os2-paragraphs-item {
+
+    .os2-paragraphs-item-inner-wrapper {
+      padding: @os2-paragraphs-item-lg-padding-top-bottom 0;
+    }
+  }
+}
+
+// Print
+@media print {
+
+  // Layout
+  .os2-paragraphs-item {}
+}
+
+// Touch
+.touchevents {
+
+  // Layout
+  .os2-paragraphs-item {}
+}
+
+// No touch
+.no-touchevents {
+
+  // Layout
+  .os2-paragraphs-item {}
+}
+
+// --------------------------------------------------
+// Mixins
+// --------------------------------------------------
+
+// Layout mixin
+.os2-mixin-paragraphs-item-layout-variant-typography(@paragraphs-item-heading-color, @paragraphs-item-subheading-color, @paragraphs-item-text-color, @paragraphs-item-link-color) {
+
+  & {
+
+    // Heading
+    .os2-paragraphs-item-heading {
+      color: @paragraphs-item-heading-color;
+    }
+
+    // Subheading
+    .os2-paragraphs-item-subheading {
+      color: @paragraphs-item-subheading-color;
+    }
+
+    // Text
+    & {
+      color: @paragraphs-item-text-color;
+    }
+
+    // Link
+    a {
+
+      &,
+      &:hover {
+        color: @paragraphs-item-link-color;
+      }
+    }
+  }
+}
+
+// Owl Carousel dots
+.os2-paragraphs-item-mixin-layout-variant-owl-carousel-dots(@dot-bg, @dot-hover-bg, @dot-active-bg, @dot-active-hover-bg) {
+
+  .owl-carousel .owl-controls .owl-page {
+
+    span {
+      background-color: @dot-bg;
+    }
+
+    &:hover {
+
+      span {
+        background-color: @dot-hover-bg;
+      }
+    }
+
+    &.active {
+
+      span {
+        background: @dot-active-bg;
+      }
+
+      &:hover {
+
+        span {
+          background: @dot-active-hover-bg;
+        }
+      }
+    }
+  }
+}

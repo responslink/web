@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Layout feature.
+ */
+
+include_once 'os2_paragraphs_layout.features.inc';

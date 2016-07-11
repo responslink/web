@@ -1,0 +1,276 @@
+// |--------------------------------------------------------------------------
+// | Variables
+// |--------------------------------------------------------------------------
+// |
+// | This file contains exposures for the following:
+// | - variables
+// |
+
+// --------------------------------------------------
+// Variables
+// --------------------------------------------------
+
+// Brand
+@brand-secondary: #4ec6f8;
+@brand-tertiary: #ff911c;
+@brand-quaternary: #F24244;
+@brand-quinary: #ea6060;
+@brand-light: #f1f0ec;
+@brand-dark: @gray-base;
+
+// Social
+@social-link-color-facebook: #3b5998;
+@social-link-color-twitter: #55acee;
+@social-link-color-instagram: #3f729b;
+@social-link-color-linkedin: #0976b4;
+@social-link-color-pinterest: #cc2127;
+@social-link-color-vimeo: #1ab7ea;
+@social-link-color-youtube: #e52d27;
+@social-link-color-google-plus: #d64431;
+
+// Content
+@content-bg: #fff;
+@content-border-color: #e9ecef;
+@border-color: #d4d9e4;
+
+// Typography
+@text-color-light: #8c9494;
+
+// Button
+@btn-border-width: 2px;
+
+@btn-primary-faceless-color: @btn-primary-color;
+
+@btn-secondary-color: #fff;
+@btn-secondary-faceless-color: #fff;
+@btn-secondary-bg: @brand-secondary;
+@btn-secondary-border: darken(@btn-secondary-bg, 5%);
+
+@btn-tertiary-color: #fff;
+@btn-tertiary-faceless-color: #fff;
+@btn-tertiary-bg: @brand-tertiary;
+@btn-tertiary-border: darken(@btn-tertiary-bg, 5%);
+
+@btn-quaternary-color: #fff;
+@btn-quaternary-faceless-color: #fff;
+@btn-quaternary-bg: @brand-quaternary;
+@btn-quaternary-border: darken(@btn-quaternary-bg, 5%);
+
+@btn-quinary-color: #fff;
+@btn-quinary-faceless-color: #fff;
+@btn-quinary-bg: @brand-quinary;
+@btn-quinary-border: darken(@btn-quinary-bg, 5%);
+
+@btn-light-color: @text-color;
+@btn-light-faceless-color: #fff;
+@btn-light-bg: @brand-light;
+@btn-light-border: darken(@btn-light-bg, 5%);
+
+@btn-dark-color: #fff;
+@btn-dark-faceless-color: #fff;
+@btn-dark-bg: @brand-dark;
+@btn-dark-border: darken(@btn-dark-bg, 5%);
+
+@btn-state-default-faceless-color: @text-color;
+@btn-state-default-color: @text-color;
+@btn-state-default-bg: transparent;
+@btn-state-default-border: @brand-primary;
+
+@btn-state-primary-faceless-color: #fff;
+@btn-state-primary-color: @state-dark-text;
+@btn-state-primary-bg: @state-dark-bg;
+@btn-state-primary-border: darken(@btn-state-primary-bg, 5%);
+
+@btn-state-secondary-faceless-color: #fff;
+@btn-state-secondary-color: @text-color;
+@btn-state-secondary-bg: #fff;
+@btn-state-secondary-border: #fff;
+
+@btn-state-tertiary-faceless-color: #fff;
+@btn-state-tertiary-color: @text-color;
+@btn-state-tertiary-bg: #fff;
+@btn-state-tertiary-border: #fff;
+
+@btn-state-quaternary-faceless-color: #fff;
+@btn-state-quaternary-color: @text-color;
+@btn-state-quaternary-bg: #fff;
+@btn-state-quaternary-border: #fff;
+
+@btn-state-quinary-faceless-color: #fff;
+@btn-state-quinary-color: @text-color;
+@btn-state-quinary-bg: #fff;
+@btn-state-quinary-border: #fff;
+
+@btn-state-light-faceless-color: #fff;
+@btn-state-light-color: @state-primary-text;
+@btn-state-light-bg: @state-primary-bg;
+@btn-state-light-border: @btn-state-light-bg;
+
+@btn-state-dark-faceless-color: #fff;
+@btn-state-dark-color: #fff;
+@btn-state-dark-bg: @brand-primary;
+@btn-state-dark-border: @brand-primary;
+
+// Paths
+@path-image: "../img/";
+
+// Media queries
+@media-query-mobile: ~"screen";
+@media-query-mobile-only: ~"screen and (max-width: @{screen-xs-max})";
+@media-query-tablet: ~"screen and (min-width: @{screen-sm-min})";
+@media-query-tablet-only: ~"screen and (min-width: @{screen-sm-min}) and (max-width: @{screen-sm-max})";
+@media-query-desktop: ~"screen and (min-width: @{screen-md-min})";
+@media-query-desktop-only: ~"screen and (min-width: @{screen-md-min}) and (max-width: @{screen-md-max})";
+@media-query-large-desktop: ~"screen and (min-width: @{screen-lg-min})";
+@media-query-large-desktop-only: @media-query-large-desktop;
+
+// Inner spacing
+@content-xs-heading-top-bottom-spacing: 10px;
+@content-sm-heading-top-bottom-spacing: 15px;
+@content-md-heading-top-bottom-spacing: 20px;
+@content-lg-heading-top-bottom-spacing: 20px;
+
+@content-xs-body-top-bottom-spacing: 10px;
+@content-sm-body-top-bottom-spacing: 13px;
+@content-md-body-top-bottom-spacing: 15px;
+@content-lg-body-top-bottom-spacing: 15px;
+
+@content-xs-footer-top-bottom-spacing: 10px;
+@content-sm-footer-top-bottom-spacing: 13px;
+@content-md-footer-top-bottom-spacing: 15px;
+@content-lg-footer-top-bottom-spacing: 15px;
+
+@content-xs-left-right-spacing: 13px;
+@content-sm-left-right-spacing: 17px;
+@content-md-left-right-spacing: 21px;
+@content-lg-left-right-spacing: 25px;
+
+// --------------------------------------------------
+// States
+// --------------------------------------------------
+
+// Default
+@state-default-heading: @headings-color;
+@state-default-subheading: @brand-primary;
+@state-default-link: @state-default-subheading;
+@state-default-border: #d4d9e4;
+@state-default-text-light: @text-color-light;
+@state-default-text: @text-color;
+@state-default-bg: @body-bg;
+
+// Primary
+@state-primary-heading: #fff;
+@state-primary-subheading: #fff;
+@state-primary-link: @state-primary-subheading;
+@state-primary-border: #fff;
+@state-primary-text-light: #fff;
+@state-primary-text: #fff;
+@state-primary-bg: @brand-primary;
+
+// Secondary
+@state-secondary-text: #fff;
+@state-secondary-bg: @brand-secondary;
+
+// Tertiary
+@state-tertiary-text: #fff;
+@state-tertiary-bg: @brand-tertiary;
+
+// Quaternary
+@state-quaternary-text: #fff;
+@state-quaternary-bg: @brand-quaternary;
+
+// Quinary
+@state-quinary-text: #fff;
+@state-quinary-bg: @brand-quinary;
+
+// Light
+@state-light-heading: @state-default-heading;
+@state-light-subheading: @state-default-subheading;
+@state-light-link: @state-default-link;
+@state-light-border: @state-default-border;
+@state-light-text-light: @state-default-text-light;
+@state-light-text: @state-default-text;
+@state-light-bg: @brand-light;
+
+// Dark
+@state-dark-heading: #fff;
+@state-dark-subheading: #fff;
+@state-dark-link: @state-dark-subheading;
+@state-dark-border: lighten(@state-dark-bg, 20%);
+@state-dark-text-light: darken(@state-dark-text, 20%);
+@state-dark-text: #fff;
+@state-dark-bg: @brand-dark;
+
+// --------------------------------------------------
+// Form (form.less)
+// --------------------------------------------------
+
+// Form control
+@bs3-designer-form-control-border-width: 1px;
+@bs3-designer-form-control-box-shadow: none;
+
+// --------------------------------------------------
+// Icon (icon.less)
+// --------------------------------------------------
+
+// Sizing
+@bs3-designer-icon-font-size-xxs: floor((@bs3-designer-icon-font-size * 0.85));
+@bs3-designer-icon-font-size-xs: floor((@bs3-designer-icon-font-size * 0.90));
+@bs3-designer-icon-font-size-s: floor((@bs3-designer-icon-font-size * 0.95));
+@bs3-designer-icon-font-size: @font-size-base;
+@bs3-designer-icon-font-size-l: floor((@bs3-designer-icon-font-size * 1.25));
+@bs3-designer-icon-font-size-xl: floor((@bs3-designer-icon-font-size * 1.5));
+@bs3-designer-icon-font-size-xxl: floor((@bs3-designer-icon-font-size * 2.5));
+
+// --------------------------------------------------
+// Tooltip (tooltip.less)
+// --------------------------------------------------
+
+@bs3-designer-tooltip-border-radius: @border-radius-base;
+@bs3-designer-tooltip-font-size: @font-size-small;
+@bs3-designer-tooltip-padding-horizontal: @padding-base-horizontal;
+@bs3-designer-tooltip-padding-vertical: @padding-large-vertical;
+
+// --------------------------------------------------
+// Transition (transition.less)
+// --------------------------------------------------
+
+@bs3-designer-transition-time-short: .15s;
+@bs3-designer-transition-time: .25s;
+@bs3-designer-transition-time-long: .4s;
+
+// --------------------------------------------------
+// Typography (typography.less)
+// --------------------------------------------------
+
+// Font weight
+@headings-font-weight-light: 300;
+@headings-font-weight-semi-light: @headings-font-weight-light;
+@headings-font-weight: 400;
+@headings-font-weight-semi-bold: 700;
+@headings-font-weight-bold: 900;
+
+@font-weight-light: 300;
+@font-weight-semi-light: @font-weight-light;
+@font-weight: 400;
+@font-weight-semi-bold: 700;
+@font-weight-bold: 700;
+
+// Line height
+@bs3-designer-headings-h1-line-height: bs3-designer-mixin-line-height(@font-size-h1);
+@bs3-designer-headings-h2-line-height: bs3-designer-mixin-line-height(@font-size-h2);
+@bs3-designer-headings-h3-line-height: bs3-designer-mixin-line-height(@font-size-h3);
+@bs3-designer-headings-h4-line-height: bs3-designer-mixin-line-height(@font-size-h4);
+@bs3-designer-headings-h5-line-height: bs3-designer-mixin-line-height(@font-size-h5);
+@bs3-designer-headings-h6-line-height: bs3-designer-mixin-line-height(@font-size-h6);
+
+@bs3-designer-line-height-small: floor((@font-size-small * @line-height-base));
+@bs3-designer-line-height-large: floor((@font-size-large * @line-height-base));
+
+// Letter spacing
+@bs3-designer-headings-h1-letter-spacing: -1px;
+@bs3-designer-headings-h2-letter-spacing: -1px;
+@bs3-designer-headings-h3-letter-spacing: 0;
+@bs3-designer-headings-h4-letter-spacing: @bs3-designer-headings-h3-letter-spacing;
+@bs3-designer-headings-h5-letter-spacing: @bs3-designer-headings-h4-letter-spacing;
+@bs3-designer-headings-h6-letter-spacing: @bs3-designer-headings-h5-letter-spacing;

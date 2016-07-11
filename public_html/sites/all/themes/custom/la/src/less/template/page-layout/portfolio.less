@@ -1,0 +1,146 @@
+// |--------------------------------------------------------------------------
+// | Portfolio
+// |--------------------------------------------------------------------------
+// |
+// | This file contains styles for the following:
+// | - .portfolio
+// |
+
+// --------------------------------------------------
+// Variables
+// --------------------------------------------------
+
+@portfolio-xs-padding-top:      25px;
+@portfolio-xs-padding-bottom:   10px;
+@portfolio-sm-padding-top:      25px;
+@portfolio-sm-padding-bottom:   10px;
+@portfolio-md-padding-top:      30px;
+@portfolio-md-padding-bottom:   15px;
+@portfolio-lg-padding-top:      30px;
+@portfolio-lg-padding-bottom:   15px;
+
+// --------------------------------------------------
+// Styling
+// --------------------------------------------------
+
+// Portfolio
+.portfolio {
+  background-color: #f1f0ec;
+
+  .owl-theme .owl-controls {
+    margin-top: 15px;
+
+    .owl-page {
+
+      &.active {
+
+        span {
+          background: @brand-primary;
+        }
+      }
+    }
+  }
+  .owl-item {
+
+    img {
+      max-width: 50%;
+      margin: auto;
+    }
+  }
+}
+
+// --------------------------------------------------
+// Responsive
+// --------------------------------------------------
+
+// Mobile
+@media @media-query-mobile {
+
+  // Portfolio
+  .portfolio {}
+}
+
+// Mobile - only
+@media @media-query-mobile-only {
+
+  // Portfolio
+  .portfolio {
+    padding: @portfolio-xs-padding-top 0 @portfolio-xs-padding-bottom 0;
+  }
+}
+
+// Tablet
+@media @media-query-tablet {
+
+  // Portfolio
+  .portfolio {}
+}
+
+// Tablet - only
+@media @media-query-tablet-only {
+
+  // Portfolio
+  .portfolio {
+    padding: @portfolio-sm-padding-top 0 @portfolio-sm-padding-bottom 0;
+  }
+}
+
+// Desktop
+@media @media-query-desktop {
+
+  // Portfolio
+  .portfolio {}
+}
+
+// Desktop - only
+@media @media-query-desktop-only {
+
+  // Portfolio
+  .portfolio {
+    padding: @portfolio-md-padding-top 0 @portfolio-md-padding-bottom 0;
+  }
+}
+
+// Large desktop
+@media @media-query-large-desktop {
+
+  // Portfolio
+  .portfolio {}
+}
+
+// Large desktop - only
+@media @media-query-large-desktop-only {
+
+  // Portfolio
+  .portfolio {
+    padding: @portfolio-lg-padding-top 0 @portfolio-lg-padding-bottom 0;
+  }
+}
+
+// Print
+@media print {
+
+  // Portfolio
+  .portfolio {}
+}
+
+// Touch
+.touchevents {
+
+  // Portfolio
+  .portfolio {}
+}
+
+// No touch
+.no-touchevents {
+
+  // Portfolio
+  .portfolio {}
+}
+
+// --------------------------------------------------
+// Mixins
+// --------------------------------------------------
+
+// Portfolio mixin
+.mixin-portfolio() {}

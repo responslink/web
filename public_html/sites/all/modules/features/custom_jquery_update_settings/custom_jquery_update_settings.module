@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the jQuery update settings feature.
+ */
+
+include_once 'custom_jquery_update_settings.features.inc';

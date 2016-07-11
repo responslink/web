@@ -1,0 +1,274 @@
+// |--------------------------------------------------------------------------
+// | Hero
+// |--------------------------------------------------------------------------
+// |
+// | This file contains styles for the following:
+// | - .os2-hero
+// |
+
+// --------------------------------------------------
+// Variables
+// --------------------------------------------------
+
+@os2-hero-border-bottom-color: @brand-primary;
+@os2-hero-border-bottom-width: 4px;
+
+// Responsive
+
+// --------------------------------------------------
+// Variables (with image)
+// --------------------------------------------------
+
+// Responsive
+@os2-hero-with-image-xs-padding-bottom: 40px;
+@os2-hero-with-image-xs-padding-top: (100px + @bs3-simple-navigation-height);
+
+@os2-hero-with-image-sm-padding-bottom: 120px;
+@os2-hero-with-image-sm-padding-top: (120px + @bs3-main-navigation-height);
+
+@os2-hero-with-image-md-padding-bottom: 130px;
+@os2-hero-with-image-md-padding-top: (130px + @bs3-main-navigation-height);
+
+@os2-hero-with-image-lg-padding-bottom: 130px;
+@os2-hero-with-image-lg-padding-top: (130px + @bs3-main-navigation-height);
+
+// --------------------------------------------------
+// Variables (without image)
+// --------------------------------------------------
+
+@os2-hero-without-image-background-color: @state-dark-bg;
+
+// Responsive
+@os2-hero-without-image-xs-padding-bottom: 8px;
+@os2-hero-without-image-xs-padding-top: (30px + @bs3-simple-navigation-height);
+@os2-hero-without-image-sm-padding-bottom: 12px;
+@os2-hero-without-image-sm-padding-top: (50px + @bs3-main-navigation-height);
+@os2-hero-without-image-md-padding-bottom: 15px;
+@os2-hero-without-image-md-padding-top: (70px + @bs3-main-navigation-height);
+@os2-hero-without-image-lg-padding-bottom: 15px;
+@os2-hero-without-image-lg-padding-top: (80px + @bs3-main-navigation-height);
+
+// --------------------------------------------------
+// Styling
+// --------------------------------------------------
+
+// Hero
+.os2-hero {
+  overflow: hidden;
+  border-bottom-color: @os2-hero-border-bottom-color;
+  border-bottom-width: @os2-hero-border-bottom-width;
+  border-bottom-style: solid;
+
+  .os2-hero-heading {
+
+    .os2-hero-heading-title {
+      color: @state-dark-text;
+      margin: 0;
+    }
+  }
+
+  .os2-hero-subheading {
+    color: @state-dark-text;
+  }
+}
+
+// --------------------------------------------------
+// Variants
+// --------------------------------------------------
+
+// With image
+.os2-hero-with-image {
+  background-color: transparent;
+  .background-cover;
+
+  .os2-hero-headings-wrapper {
+    text-align: center;
+
+    .os2-hero-heading {
+      padding-bottom: 20px;
+
+      .os2-hero-heading-title {
+        .heading-h1;
+        font-weight: @headings-font-weight;
+      }
+    }
+
+    .os2-hero-subheading {
+      .heading-h4;
+      font-weight: @headings-font-weight-semi-bold;
+    }
+  }
+}
+
+// Without image
+.os2-hero-without-image {
+  background-color: @os2-hero-without-image-background-color;
+
+  .os2-hero-heading {
+
+    .os2-hero-heading-title {
+      .heading-h3;
+      font-weight: @headings-font-weight-bold;
+    }
+  }
+
+  .os2-hero-subheading {
+    display: none;
+  }
+}
+
+// --------------------------------------------------
+// Responsive
+// --------------------------------------------------
+
+// Mobile
+@media @media-query-mobile {
+
+  // Hero
+  .os2-hero {}
+}
+
+// Mobile - only
+@media @media-query-mobile-only {
+
+  // Hero
+  .os2-hero {
+
+    &.os2-hero-with-image {
+
+      .os2-hero-inner-wrapper {
+        padding-top: @os2-hero-with-image-xs-padding-top;
+        padding-bottom: @os2-hero-with-image-xs-padding-bottom;
+      }
+    }
+
+    &.os2-hero-without-image {
+
+      .os2-hero-inner-wrapper {
+        padding-top: @os2-hero-without-image-xs-padding-top;
+        padding-bottom: @os2-hero-without-image-xs-padding-bottom;
+      }
+    }
+  }
+}
+
+// Tablet
+@media @media-query-tablet {
+
+  // Hero
+  .os2-hero {  }
+}
+
+// Tablet - only
+@media @media-query-tablet-only {
+
+  // Hero
+  .os2-hero {
+
+    &.os2-hero-with-image {
+
+      .os2-hero-inner-wrapper {
+        padding-top: @os2-hero-with-image-sm-padding-top;
+        padding-bottom: @os2-hero-with-image-sm-padding-bottom;
+      }
+    }
+
+    &.os2-hero-without-image {
+
+      .os2-hero-inner-wrapper {
+        padding-top: @os2-hero-without-image-sm-padding-top;
+        padding-bottom: @os2-hero-without-image-sm-padding-bottom;
+      }
+    }
+  }
+}
+
+// Desktop
+@media @media-query-desktop {
+
+  // Hero
+  .os2-hero {}
+}
+
+// Desktop - only
+@media @media-query-desktop-only {
+
+  // Hero
+  .os2-hero {
+
+    &.os2-hero-with-image {
+
+      .os2-hero-inner-wrapper {
+        padding-top: @os2-hero-with-image-md-padding-top;
+        padding-bottom: @os2-hero-with-image-md-padding-bottom;
+      }
+    }
+
+    &.os2-hero-without-image {
+
+      .os2-hero-inner-wrapper {
+        padding-top: @os2-hero-without-image-md-padding-top;
+        padding-bottom: @os2-hero-without-image-md-padding-bottom;
+      }
+    }
+  }
+}
+
+// Large desktop
+@media @media-query-large-desktop {
+
+  // Hero
+  .os2-hero {}
+}
+
+// Large desktop - only
+@media @media-query-large-desktop-only {
+
+  // Hero
+  .os2-hero {
+
+    &.os2-hero-with-image {
+
+      .os2-hero-inner-wrapper {
+        padding-top: @os2-hero-with-image-lg-padding-top;
+        padding-bottom: @os2-hero-with-image-lg-padding-bottom;
+      }
+    }
+
+    &.os2-hero-without-image {
+
+      .os2-hero-inner-wrapper {
+        padding-top: @os2-hero-without-image-lg-padding-top;
+        padding-bottom: @os2-hero-without-image-lg-padding-bottom;
+      }
+    }
+  }
+}
+
+// Print
+@media print {
+
+  // Hero
+  .os2-hero {}
+}
+
+// Touch
+.touchevents {
+
+  // Hero
+  .os2-hero {}
+}
+
+// No touch
+.no-touchevents {
+
+  // Hero
+  .os2-hero {}
+}
+
+// --------------------------------------------------
+// Mixins
+// --------------------------------------------------
+
+// Hero mixin
+.os2-mixin-hero() {}

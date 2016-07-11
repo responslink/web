@@ -1,0 +1,245 @@
+// |--------------------------------------------------------------------------
+// | Teaser (default)
+// |--------------------------------------------------------------------------
+// |
+// | This file contains styles for the following:
+// | - .os2-node-teaser
+// |
+
+// --------------------------------------------------
+// Variables
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Styling
+// --------------------------------------------------
+
+// Teaser
+.os2-node-teaser-testimonial {
+
+    // Heading
+    .os2-node-teaser-heading {
+
+        .os2-node-teaser-heading-title {
+            .heading-h4;
+            margin: 0;
+        }
+    }
+
+    .os2-node-teaser-body {
+        padding: 0;
+        padding-bottom: @grid-gutter-width;
+
+        + .os2-node-teaser-footer {
+            padding-top: floor( (@grid-gutter-width / 2) );
+        }
+    }
+
+    .os2-node-teaser-footer {
+        padding: 0;
+        border-top: 1px solid @border-color;
+    }
+
+    .os2-node-teaser-sender-image-wrapper {
+        width: floor( (@os2-profile-image-default-width + (@grid-gutter-width / 2)) );
+    }
+
+    .os2-node-teaser-statement {
+        .heading-h3;
+        color: @text-color-light;
+        font-style: italic;
+    }
+
+    .os2-node-teaser-sender-name {
+        .heading-h4;
+        font-weight: @headings-font-weight-bold;
+    }
+
+    .os2-node-teaser-company {
+        .heading-h6;
+        font-weight: @headings-font-weight-semi-bold;
+        color: @brand-primary;
+    }
+
+    .os2-node-teaser-sender-image {
+
+        img {
+            display: inline-block;
+            width: @os2-profile-image-default-width;
+            border-radius: 100%;
+        }
+    }
+}
+
+// --------------------------------------------------
+// Responsive
+// --------------------------------------------------
+
+// Mobile
+@media @media-query-mobile {
+
+    // Teaser
+    .os2-node-teaser-testimonial {}
+}
+
+// Mobile - only
+@media @media-query-mobile-only {
+
+    // Teaser
+    -testimonial os2-node-teaser {
+
+        .os2-node-teaser-action {
+            padding-top: 10px;
+        }
+
+        // Heading
+        .os2-node-teaser-heading {
+            padding: @content-xs-heading-top-bottom-spacing @content-xs-left-right-spacing;
+        }
+
+        // Body
+        .os2-node-teaser-body {
+            padding: @content-xs-body-top-bottom-spacing @content-xs-left-right-spacing;
+        }
+
+        // Footer
+        .os2-node-teaser-footer {
+            padding: @content-xs-footer-top-bottom-spacing @content-xs-left-right-spacing;
+        }
+    }
+}
+
+// Tablet
+@media @media-query-tablet {
+
+    // Teaser
+    -testimonial os2-node-teaser {
+
+        .os2-node-teaser-profile-image,
+        .os2-node-teaser-patient {
+            float: left;
+        }
+
+        .os2-node-teaser-profile-image {
+            margin-right: floor( (@grid-gutter-width / 2) );
+        }
+
+        .os2-node-teaser-action {
+
+            + .os2-node-teaser-action {
+                margin-top: 8px;
+            }
+        }
+    }
+}
+
+// Tablet - only
+@media @media-query-tablet-only {
+
+    // Teaser
+    -testimonial os2-node-teaser {
+
+        // Heading
+        .os2-node-teaser-heading {
+            padding: @content-sm-heading-top-bottom-spacing @content-sm-left-right-spacing;
+        }
+
+        // Body
+        .os2-node-teaser-body {
+            padding: @content-sm-body-top-bottom-spacing @content-sm-left-right-spacing;
+        }
+
+        // Footer
+        .os2-node-teaser-footer {
+            padding: @content-sm-footer-top-bottom-spacing @content-sm-left-right-spacing;
+        }
+    }
+}
+
+// Desktop
+@media @media-query-desktop {
+
+    // Teaser
+    .os2-node-teaser-testimonial {}
+}
+
+// Desktop - only
+@media @media-query-desktop-only {
+
+    // Teaser
+    -testimonial os2-node-teaser {
+
+        // Heading
+        .os2-node-teaser-heading {
+            padding: @content-md-heading-top-bottom-spacing @content-md-left-right-spacing;
+        }
+
+        // Body
+        .os2-node-teaser-body {
+            padding: @content-md-body-top-bottom-spacing @content-md-left-right-spacing;
+        }
+
+        // Footer
+        .os2-node-teaser-footer {
+            padding: @content-md-footer-top-bottom-spacing @content-md-left-right-spacing;
+        }
+    }
+}
+
+// Large desktop
+@media @media-query-large-desktop {
+
+    // Teaser
+    .os2-node-teaser-testimonial {}
+}
+
+// Large desktop - only
+@media @media-query-large-desktop-only {
+
+    // Teaser
+    -testimonial os2-node-teaser {
+
+        // Heading
+        .os2-node-teaser-heading {
+            padding: @content-lg-heading-top-bottom-spacing @content-lg-left-right-spacing;
+        }
+
+        // Body
+        .os2-node-teaser-body {
+            padding: @content-lg-body-top-bottom-spacing @content-lg-left-right-spacing;
+        }
+
+        // Footer
+        .os2-node-teaser-footer {
+            padding: @content-lg-footer-top-bottom-spacing @content-lg-left-right-spacing;
+        }
+    }
+}
+
+// Print
+@media print {
+
+    // Teaser
+    .os2-node-teaser-testimonial {}
+}
+
+// Touch
+.touchevents {
+
+    // Teaser
+    .os2-node-teaser-testimonial {}
+}
+
+// No touch
+.no-touchevents {
+
+    // Teaser
+    .os2-node-teaser-testimonial {}
+}
+
+// --------------------------------------------------
+// Mixins
+// --------------------------------------------------
+
+// Teaser mixin
+.os2-mixin-node-teaser() {}

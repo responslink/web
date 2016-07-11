@@ -1,0 +1,219 @@
+// |--------------------------------------------------------------------------
+// | Layout
+// |--------------------------------------------------------------------------
+// |
+// | This file contains styles for the following:
+// | - .os2-paragraphs-item
+// |
+
+// --------------------------------------------------
+// Variables
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Styling
+// --------------------------------------------------
+
+// Layout
+.os2-paragraphs-item {
+
+  .os2-paragraphs-item-heading-wrapper {
+
+    .os2-paragraphs-item-heading,
+    .os2-paragraphs-item-subheading {
+      text-align: center;
+
+      .field-item {
+        max-width: 70%;
+        margin: auto;
+      }
+    }
+  }
+
+  .os2-paragraphs-item-action-link {
+    text-align: center;
+
+    a {
+
+      &,
+      &:hover {
+        .btn;
+        .btn-lg;
+        .btn-rounded;
+      }
+    }
+  }
+
+  .owl-carousel {
+
+    .owl-item {
+      padding: 0 floor( (@grid-gutter-width / 2) );
+    }
+
+    .owl-controls {
+      margin-top: 10px;
+
+      .owl-page {
+
+        &.active {
+
+          span {
+            background: @brand-primary;
+          }
+        }
+      }
+    }
+  }
+}
+
+// --------------------------------------------------
+// Variants
+// --------------------------------------------------
+
+// Default
+.paragraphs-state-default {
+
+  .os2-paragraphs-item-action-link {
+
+    a {
+
+      &,
+      &:hover {
+        .btn-state-default;
+      }
+    }
+  }
+}
+
+// Primary
+.paragraphs-state-primary {
+
+  .os2-paragraphs-item-action-link {
+
+    a {
+
+      &,
+      &:hover {
+        .btn-state-primary;
+      }
+    }
+  }
+}
+
+// Light
+.paragraphs-state-light {
+
+  .os2-paragraphs-item-action-link {
+
+    a {
+
+      &,
+      &:hover {
+        .btn-state-light;
+      }
+    }
+  }
+}
+
+// Dark
+.paragraphs-state-dark {
+
+  .os2-paragraphs-item-action-link {
+
+    a {
+
+      &,
+      &:hover {
+        .btn-state-dark;
+      }
+    }
+  }
+}
+
+// --------------------------------------------------
+// Responsive
+// --------------------------------------------------
+
+// Mobile
+@media @media-query-mobile {
+
+  // Layout
+  .os2-paragraphs-item {}
+}
+
+// Mobile - only
+@media @media-query-mobile-only {
+
+  // Layout
+  .os2-paragraphs-item {}
+}
+
+// Tablet
+@media @media-query-tablet {
+
+  // Layout
+  .os2-paragraphs-item {}
+}
+
+// Tablet - only
+@media @media-query-tablet-only {
+
+  // Layout
+  .os2-paragraphs-item {}
+}
+
+// Desktop
+@media @media-query-desktop {
+
+  // Layout
+  .os2-paragraphs-item {}
+}
+
+// Desktop - only
+@media @media-query-desktop-only {
+
+  // Layout
+  .os2-paragraphs-item {}
+}
+
+// Large desktop
+@media @media-query-large-desktop {
+
+  // Layout
+  .os2-paragraphs-item {}
+}
+
+// Large desktop - only
+@media @media-query-large-desktop-only {
+
+  // Layout
+  .os2-paragraphs-item {}
+}
+
+// Print
+@media print {
+
+  // Layout
+  .os2-paragraphs-item {}
+}
+
+// Touch
+.touchevents {
+
+  // Layout
+  .os2-paragraphs-item {}
+}
+
+// No touch
+.no-touchevents {
+
+  // Layout
+  .os2-paragraphs-item {}
+}
+
+// --------------------------------------------------
+// Mixins
+// --------------------------------------------------
+
+// Layout mixin
+.os2-paragraphs-item-mixin-layout() {}

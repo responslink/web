@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Habitat settings feature.
+ */
+
+include_once 'custom_habitat_settings.features.inc';

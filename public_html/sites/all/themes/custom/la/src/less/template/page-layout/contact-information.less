@@ -1,0 +1,155 @@
+// |--------------------------------------------------------------------------
+// | Contact information
+// |--------------------------------------------------------------------------
+// |
+// | This file contains styles for the following:
+// | - .contact-information
+// |
+
+// --------------------------------------------------
+// Variables
+// --------------------------------------------------
+
+// Responsive
+@contact-information-xs-padding-top-bottom:   20px;
+@contact-information-sm-padding-top-bottom:   50px;
+@contact-information-md-padding-top-bottom:   65px;
+@contact-information-lg-padding-top-bottom:   70px;
+
+// --------------------------------------------------
+// Styling
+// --------------------------------------------------
+
+// Contact information
+.contact-information {
+  background-color: #fff;
+
+  .contact-information-block {
+    text-align: center;
+
+    .contact-information-block-icon {
+      display: inline-block;
+      background-color: @brand-primary;
+      border-radius: 100%;
+      width: 50px;
+      height: 50px;
+      padding-top: 16px;
+
+      .icon {
+        font-size: 20px;
+        color: #fff;
+      }
+    }
+
+    .contact-information-block-heading {
+
+      .contact-information-block-heading-title {
+        .heading-h6;
+        font-weight: @headings-font-weight-semi-bold;
+        color: @headings-color;
+      }
+    }
+
+    .contact-information-block-body {}
+  }
+}
+
+// --------------------------------------------------
+// Responsive
+// --------------------------------------------------
+
+// Mobile
+@media @media-query-mobile {
+
+  // Contact information
+  .contact-information {}
+}
+
+// Mobile - only
+@media @media-query-mobile-only {
+
+  // Contact information
+  .contact-information {
+    padding: @contact-information-xs-padding-top-bottom 0;
+
+    .contact-information-block {
+      padding: 5px 0;
+    }
+  }
+}
+
+// Tablet
+@media @media-query-tablet {
+
+  // Contact information
+  .contact-information {}
+}
+
+// Tablet - only
+@media @media-query-tablet-only {
+
+  // Contact information
+  .contact-information {
+    padding: @contact-information-sm-padding-top-bottom 0;
+  }
+}
+
+// Desktop
+@media @media-query-desktop {
+
+  // Contact information
+  .contact-information {}
+}
+
+// Desktop - only
+@media @media-query-desktop-only {
+
+  // Contact information
+  .contact-information {
+    padding: @contact-information-md-padding-top-bottom 0;
+  }
+}
+
+// Large desktop
+@media @media-query-large-desktop {
+
+  // Contact information
+  .contact-information {}
+}
+
+// Large desktop - only
+@media @media-query-large-desktop-only {
+
+  // Contact information
+  .contact-information {
+    padding: @contact-information-lg-padding-top-bottom 0;
+  }
+}
+
+// Print
+@media print {
+
+  // Contact information
+  .contact-information {}
+}
+
+// Touch
+.touchevents {
+
+  // Contact information
+  .contact-information {}
+}
+
+// No touch
+.no-touchevents {
+
+  // Contact information
+  .contact-information {}
+}
+
+// --------------------------------------------------
+// Mixins
+// --------------------------------------------------
+
+// Contact information mixin
+.mixin-contact-information() {}

@@ -1,0 +1,14 @@
+name = Body
+core = 7.x
+package = OS2 paragraphs
+dependencies[] = features
+dependencies[] = os2_paragraphs_action_box
+dependencies[] = os2_paragraphs_layout
+dependencies[] = paragraphs
+dependencies[] = text
+features[features_api][] = api:2
+features[field_instance][] = paragraphs_item-content_body-field_body
+features[field_instance][] = paragraphs_item-content_body-field_heading
+features[field_instance][] = paragraphs_item-content_body-field_subheading
+features[paragraphs][] = content_body
+project path = sites/all/modules/features

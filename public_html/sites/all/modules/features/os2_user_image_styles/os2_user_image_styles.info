@@ -1,0 +1,12 @@
+name = Image styles
+core = 7.x
+package = OS2 user
+dependencies[] = epsacrop
+dependencies[] = image
+features[features_api][] = api:2
+features[image][] = profile_image_default
+features[image][] = profile_image_extra_large
+features[image][] = profile_image_large
+features[image][] = profile_image_mini
+features[image][] = profile_image_small
+project path = sites/all/modules/features

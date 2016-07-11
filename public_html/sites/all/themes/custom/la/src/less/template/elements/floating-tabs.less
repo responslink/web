@@ -1,0 +1,313 @@
+// |--------------------------------------------------------------------------
+// | Tabs
+// |--------------------------------------------------------------------------
+// |
+// | This file contains styles for the following:
+// | - .os2-floating-tabs-container
+// |
+
+// --------------------------------------------------
+// Variables
+// --------------------------------------------------
+
+@os2-floating-tabs-spacing:                 @line-height-computed;
+@os2-floating-tabs-border-radius:           @border-radius-base;
+@os2-floating-tabs-transition-time:         @bs3-designer-transition-time;
+@os2-floating-tabs-stacked-spacing:         5px;
+
+@os2-floating-tabs-top-bottom-inner-spacing: @padding-base-vertical;
+@os2-floating-tabs-left-right-inner-spacing: @padding-base-horizontal;
+
+// Variants
+@os2-floating-tabs-default-font-color:              @btn-default-color;
+@os2-floating-tabs-default-background-color:        @btn-default-bg;
+@os2-floating-tabs-default-hover-font-color:        darken(@os2-floating-tabs-default-font-color, 5%);
+@os2-floating-tabs-default-hover-background-color:  darken(@os2-floating-tabs-default-background-color, 15%);
+@os2-floating-tabs-default-active-font-color:       @btn-secondary-color;
+@os2-floating-tabs-default-active-background-color: @btn-secondary-bg;
+
+@os2-floating-tabs-primary-font-color:              @btn-light-color;
+@os2-floating-tabs-primary-background-color:        @btn-light-bg;
+@os2-floating-tabs-primary-hover-font-color:        darken(@os2-floating-tabs-primary-font-color, 5%);
+@os2-floating-tabs-primary-hover-background-color:  darken(@os2-floating-tabs-primary-background-color, 15%);
+@os2-floating-tabs-primary-active-font-color:       @btn-primary-color;
+@os2-floating-tabs-primary-active-background-color: @btn-primary-bg;
+
+@os2-floating-tabs-secondary-font-color:              @btn-default-color;
+@os2-floating-tabs-secondary-background-color:        @btn-default-bg;
+@os2-floating-tabs-secondary-hover-font-color:        darken(@os2-floating-tabs-secondary-font-color, 5%);
+@os2-floating-tabs-secondary-hover-background-color:  darken(@os2-floating-tabs-secondary-background-color, 15%);
+@os2-floating-tabs-secondary-active-font-color:       @btn-secondary-color;
+@os2-floating-tabs-secondary-active-background-color: @btn-secondary-bg;
+
+@os2-floating-tabs-tertiary-font-color:              @btn-default-color;
+@os2-floating-tabs-tertiary-background-color:        @btn-default-bg;
+@os2-floating-tabs-tertiary-hover-font-color:        darken(@os2-floating-tabs-tertiary-font-color, 5%);
+@os2-floating-tabs-tertiary-hover-background-color:  darken(@os2-floating-tabs-tertiary-background-color, 15%);
+@os2-floating-tabs-tertiary-active-font-color:       @btn-tertiary-color;
+@os2-floating-tabs-tertiary-active-background-color: @btn-tertiary-bg;
+
+@os2-floating-tabs-quaternary-font-color:              @btn-default-color;
+@os2-floating-tabs-quaternary-background-color:        @btn-default-bg;
+@os2-floating-tabs-quaternary-hover-font-color:        darken(@os2-floating-tabs-quaternary-font-color, 5%);
+@os2-floating-tabs-quaternary-hover-background-color:  darken(@os2-floating-tabs-quaternary-background-color, 15%);
+@os2-floating-tabs-quaternary-active-font-color:       @btn-quaternary-color;
+@os2-floating-tabs-quaternary-active-background-color: @btn-quaternary-bg;
+
+@os2-floating-tabs-quinary-font-color:              @btn-default-color;
+@os2-floating-tabs-quinary-background-color:        @btn-default-bg;
+@os2-floating-tabs-quinary-hover-font-color:        darken(@os2-floating-tabs-quinary-font-color, 5%);
+@os2-floating-tabs-quinary-hover-background-color:  darken(@os2-floating-tabs-quinary-background-color, 15%);
+@os2-floating-tabs-quinary-active-font-color:       @btn-quinary-color;
+@os2-floating-tabs-quinary-active-background-color: @btn-quinary-bg;
+
+// Responsive
+@os2-floating-tabs-xs-inner-top-bottom-padding: 5px;
+@os2-floating-tabs-sm-inner-top-bottom-padding: 10px;
+@os2-floating-tabs-md-inner-top-bottom-padding: 15px;
+@os2-floating-tabs-lg-inner-top-bottom-padding: 15px;
+
+// --------------------------------------------------
+// Styling
+// --------------------------------------------------
+
+// Tabs
+.os2-floating-tabs-container {
+  position: fixed;
+  right: 0;
+  top: 120px;
+  z-index: (@zindex-navbar + 10);
+
+  // Tabs
+  .tabs--primary,
+  .tabs--secondary {
+    display: inline-block;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    &:extend(.clearfix all);
+
+    li {
+      text-align: right;
+
+      // Stacked
+      + li {
+        margin-top: @os2-floating-tabs-stacked-spacing;
+      }
+
+      a {
+        display: inline-block;
+
+        &,
+        &:hover,
+        &:focus {
+          padding: @os2-floating-tabs-top-bottom-inner-spacing @os2-floating-tabs-left-right-inner-spacing;
+          .border-left-radius(@os2-floating-tabs-border-radius);
+          border: none;
+          text-decoration: none;
+          .transition(all @os2-floating-tabs-transition-time ease-in-out);
+        }
+      }
+
+      // Active state
+      &.active {
+
+        a {
+        }
+      }
+    }
+  }
+}
+
+// --------------------------------------------------
+// Variants
+// --------------------------------------------------
+
+// Default
+.os2-floating-tabs-container {
+
+  &.os2-floating-tabs-variant-default {
+    .os2-mixin-os2-floating-tabs-variant(@os2-floating-tabs-default-background-color, @os2-floating-tabs-default-hover-background-color, @os2-floating-tabs-default-active-background-color, @os2-floating-tabs-default-font-color, @os2-floating-tabs-default-hover-font-color, @os2-floating-tabs-default-active-font-color);
+  }
+}
+
+// Primary
+.os2-floating-tabs-container {
+
+  &.os2-floating-tabs-variant-primary {
+    .os2-mixin-os2-floating-tabs-variant(@os2-floating-tabs-primary-background-color, @os2-floating-tabs-primary-hover-background-color, @os2-floating-tabs-primary-active-background-color, @os2-floating-tabs-primary-font-color, @os2-floating-tabs-primary-hover-font-color, @os2-floating-tabs-primary-active-font-color);
+  }
+}
+
+// Secondary
+.os2-floating-tabs-container {
+
+  &.os2-floating-tabs-variant-secondary {
+    .os2-mixin-os2-floating-tabs-variant(@os2-floating-tabs-secondary-background-color, @os2-floating-tabs-secondary-hover-background-color, @os2-floating-tabs-secondary-active-background-color, @os2-floating-tabs-secondary-font-color, @os2-floating-tabs-secondary-hover-font-color, @os2-floating-tabs-secondary-active-font-color);
+  }
+}
+
+// Tertiary
+.os2-floating-tabs-container {
+
+  &.os2-floating-tabs-variant-tertiary {
+    .os2-mixin-os2-floating-tabs-variant(@os2-floating-tabs-tertiary-background-color, @os2-floating-tabs-tertiary-hover-background-color, @os2-floating-tabs-tertiary-active-background-color, @os2-floating-tabs-tertiary-font-color, @os2-floating-tabs-tertiary-hover-font-color, @os2-floating-tabs-tertiary-active-font-color);
+  }
+}
+
+// Quaternary
+.os2-floating-tabs-container {
+
+  &.os2-floating-tabs-variant-quaternary {
+    .os2-mixin-os2-floating-tabs-variant(@os2-floating-tabs-quaternary-background-color, @os2-floating-tabs-quaternary-hover-background-color, @os2-floating-tabs-quaternary-active-background-color, @os2-floating-tabs-quaternary-font-color, @os2-floating-tabs-quaternary-hover-font-color, @os2-floating-tabs-quaternary-active-font-color);
+  }
+}
+
+// Quinary
+.os2-floating-tabs-container {
+
+  &.os2-floating-tabs-variant-quinary {
+    .os2-mixin-os2-floating-tabs-variant(@os2-floating-tabs-quinary-background-color, @os2-floating-tabs-quinary-hover-background-color, @os2-floating-tabs-quinary-active-background-color, @os2-floating-tabs-quinary-font-color, @os2-floating-tabs-quinary-hover-font-color, @os2-floating-tabs-quinary-active-font-color);
+  }
+}
+
+// --------------------------------------------------
+// Responsive
+// --------------------------------------------------
+
+// Mobile
+@media @media-query-mobile {
+
+  // Tabs
+  .os2-floating-tabs-container {}
+}
+
+// Mobile - only
+@media @media-query-mobile-only {
+
+  // Tabs
+  .os2-floating-tabs-container {
+    padding: @os2-floating-tabs-xs-inner-top-bottom-padding 0;
+  }
+}
+
+// Tablet
+@media @media-query-tablet {
+
+  // Tabs
+  .os2-floating-tabs-container {}
+}
+
+// Tablet - only
+@media @media-query-tablet-only {
+
+  // Tabs
+  .os2-floating-tabs-container {
+    padding: @os2-floating-tabs-sm-inner-top-bottom-padding 0;
+  }
+}
+
+// Desktop
+@media @media-query-desktop {
+
+  // Tabs
+  .os2-floating-tabs-container {}
+}
+
+// Desktop - only
+@media @media-query-desktop-only {
+
+  // Tabs
+  .os2-floating-tabs-container {
+    padding: @os2-floating-tabs-md-inner-top-bottom-padding 0;
+  }
+}
+
+// Large desktop
+@media @media-query-large-desktop {
+
+  // Tabs
+  .os2-floating-tabs-container {}
+}
+
+// Large desktop - only
+@media @media-query-large-desktop-only {
+
+  // Tabs
+  .os2-floating-tabs-container {
+    padding: @os2-floating-tabs-lg-inner-top-bottom-padding 0;
+  }
+}
+
+// Print
+@media print {
+
+  // Tabs
+  .os2-floating-tabs-container {
+    display: none;
+  }
+}
+
+// Touch
+.touchevents {
+
+  // Tabs
+  .os2-floating-tabs-container {}
+}
+
+// No touch
+.no-touchevents {
+
+  // Tabs
+  .os2-floating-tabs-container {}
+}
+
+// --------------------------------------------------
+// Mixins
+// --------------------------------------------------
+
+// Tabs variant mixin
+.os2-mixin-os2-floating-tabs-variant(@background-color, @background-hover-color, @background-active-color, @font-color, @font-hover-color, @font-active-color) {
+
+  // Tabs
+  .tabs--primary,
+  .tabs--secondary {
+
+    li {
+
+      a {
+
+        &,
+        &:hover,
+        &:focus {
+          color: @font-color;
+          background-color: @background-color;
+        }
+
+        &:hover {
+          color: @font-hover-color;
+          background-color: @background-hover-color;
+        }
+      }
+
+      // Active state
+      &.active {
+
+        a {
+
+          &,
+          &:hover,
+          &:focus {
+            color: @font-active-color;
+            background-color: @background-active-color;
+          }
+
+          // After
+          &:after {
+            border-color: @background-active-color transparent transparent;
+          }
+        }
+      }
+    }
+  }
+}

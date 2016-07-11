@@ -1,0 +1,338 @@
+// |--------------------------------------------------------------------------
+// | Simple - 2 columns
+// |--------------------------------------------------------------------------
+// |
+// | This file contains styles for the following:
+// | - .os2-paragraphs-item-simple-2-columns
+// |
+
+// --------------------------------------------------
+// Variables
+// --------------------------------------------------
+
+// Responsive
+@os2-paragraphs-item-simple-2-columns-xs-padding-top-bottom: 20px;
+@os2-paragraphs-item-simple-2-columns-sm-padding-top-bottom: 30px;
+@os2-paragraphs-item-simple-2-columns-md-padding-top-bottom: 50px;
+@os2-paragraphs-item-simple-2-columns-lg-padding-top-bottom: 50px;
+
+// --------------------------------------------------
+// Styling
+// --------------------------------------------------
+
+// Simple - 2 columns
+.os2-paragraphs-item-simple-2-columns {
+
+  .os2-paragraphs-item-simple-2-columns-action-link {
+    padding-top: 40px;
+    text-align: center;
+
+    a {
+
+      &,
+      &:hover {
+        .btn;
+        .btn-lg;
+      }
+    }
+  }
+
+  .os2-paragraphs-item-simple-2-columns-column-wrapper {}
+
+  .os2-paragraphs-item-simple-2-columns-column-heading {
+    .heading-h3;
+    font-weight: @headings-font-weight-semi-bold;
+    padding-bottom: 4px;
+  }
+
+  .os2-paragraphs-item-simple-2-columns-column-subheading {
+    .heading-h6;
+    font-weight: @headings-font-weight-semi-bold;
+    padding-bottom: 4px;
+  }
+
+  .os2-paragraphs-item-simple-2-columns-column-content {
+    padding-top: 10px;
+  }
+
+  .os2-paragraphs-item-simple-2-columns-column-link {
+    padding-top: 20px;
+
+    a {
+
+      &,
+      &:hover {
+        .btn;
+      }
+    }
+  }
+}
+
+// --------------------------------------------------
+// Variants
+// --------------------------------------------------
+
+// Default
+.os2-paragraphs-item-simple-2-columns {
+
+  &.paragraphs-state-default {
+    background-color: @body-bg;
+
+    .os2-paragraphs-item-simple-2-columns-heading {
+      color: @text-color;
+    }
+
+    .os2-paragraphs-item-simple-2-columns-subheading {
+      color: @text-color-light;
+    }
+
+    .os2-paragraphs-item-simple-2-columns-action-link {
+
+      a {
+        .btn-state-default;
+      }
+    }
+
+    .os2-paragraphs-item-simple-2-columns-column-heading {
+      color: @text-color;
+    }
+
+    .os2-paragraphs-item-simple-2-columns-column-subheading {
+      color: @brand-primary;
+    }
+
+    .os2-paragraphs-item-simple-2-columns-column-content {
+      color: @text-color;
+    }
+
+    .os2-paragraphs-item-simple-2-columns-column-link {
+
+      a {
+        .btn-state-default;
+      }
+    }
+  }
+}
+
+// Light
+.os2-paragraphs-item-simple-2-columns {
+
+  &.paragraphs-state-light {
+    background-color: @state-light-bg;
+
+    .os2-paragraphs-item-simple-2-columns-heading {
+      color: @state-light-text;
+    }
+
+    .os2-paragraphs-item-simple-2-columns-subheading {
+      color: @text-color-light;
+    }
+
+    .os2-paragraphs-item-simple-2-columns-action-link {
+
+      a {
+
+        .btn-state-light;
+      }
+    }
+
+    .os2-paragraphs-item-simple-2-columns-column-heading {
+      color: @state-light-text;
+    }
+
+    .os2-paragraphs-item-simple-2-columns-column-subheading {
+      color: @brand-primary;
+    }
+
+    .os2-paragraphs-item-simple-2-columns-column-content {
+      color: @state-light-text;
+    }
+
+    .os2-paragraphs-item-simple-2-columns-column-link {
+
+      a {
+        .btn-state-light;
+      }
+    }
+  }
+}
+
+// Primary
+.os2-paragraphs-item-simple-2-columns {
+
+  &.paragraphs-state-primary {
+    background-color: @state-primary-bg;
+
+    .os2-paragraphs-item-simple-2-columns-heading {
+      color: @headings-color;
+    }
+
+    .os2-paragraphs-item-simple-2-columns-subheading {
+      color: @state-primary-text;
+    }
+
+    .os2-paragraphs-item-simple-2-columns-action-link {
+
+      a {
+        .btn-state-primary;
+      }
+    }
+
+    .os2-paragraphs-item-simple-2-columns-column-heading {
+      color: @headings-color;
+    }
+
+    .os2-paragraphs-item-simple-2-columns-column-subheading {
+      color: @state-primary-text;
+    }
+
+    .os2-paragraphs-item-simple-2-columns-column-content {
+      color: @state-primary-text;
+    }
+
+    .os2-paragraphs-item-simple-2-columns-column-link {
+
+      a {
+        .btn-state-primary;
+      }
+    }
+  }
+}
+
+// Dark
+.os2-paragraphs-item-simple-2-columns {
+
+  &.paragraphs-state-dark {
+    background-color: @state-dark-bg;
+
+    .os2-paragraphs-item-simple-2-columns-heading {
+      color: @brand-primary;
+    }
+
+    .os2-paragraphs-item-simple-2-columns-subheading {
+      color: @state-dark-text;
+    }
+
+    .os2-paragraphs-item-simple-2-columns-action-link {
+
+      a {
+        .btn-state-dark-faceless;
+      }
+    }
+
+    .os2-paragraphs-item-simple-2-columns-column-heading {
+      color: @brand-primary;
+    }
+
+    .os2-paragraphs-item-simple-2-columns-column-subheading {
+      color: @state-dark-text;
+    }
+
+    .os2-paragraphs-item-simple-2-columns-column-content {
+      color: @state-dark-text;
+    }
+
+    .os2-paragraphs-item-simple-2-columns-column-link {
+
+      a {
+        .btn-state-dark-faceless;
+      }
+    }
+  }
+}
+
+// --------------------------------------------------
+// Responsive
+// --------------------------------------------------
+
+// Mobile
+@media @media-query-mobile {
+
+  // Simple - 2 columns
+  .os2-paragraphs-item-simple-2-columns {}
+}
+
+// Mobile - only
+@media @media-query-mobile-only {
+
+  // Simple - 2 columns
+  .os2-paragraphs-item-simple-2-columns {
+    padding: @os2-paragraphs-item-simple-2-columns-xs-padding-top-bottom 0;
+  }
+}
+
+// Tablet
+@media @media-query-tablet {
+
+  // Simple - 2 columns
+  .os2-paragraphs-item-simple-2-columns {}
+}
+
+// Tablet - only
+@media @media-query-tablet-only {
+
+  // Simple - 2 columns
+  .os2-paragraphs-item-simple-2-columns {
+    padding: @os2-paragraphs-item-simple-2-columns-sm-padding-top-bottom 0;
+  }
+}
+
+// Desktop
+@media @media-query-desktop {
+
+  // Simple - 2 columns
+  .os2-paragraphs-item-simple-2-columns {}
+}
+
+// Desktop - only
+@media @media-query-desktop-only {
+
+  // Simple - 2 columns
+  .os2-paragraphs-item-simple-2-columns {
+    padding: @os2-paragraphs-item-simple-2-columns-md-padding-top-bottom 0;
+  }
+}
+
+// Large desktop
+@media @media-query-large-desktop {
+
+  // Simple - 2 columns
+  .os2-paragraphs-item-simple-2-columns {}
+}
+
+// Large desktop - only
+@media @media-query-large-desktop-only {
+
+  // Simple - 2 columns
+  .os2-paragraphs-item-simple-2-columns {
+    padding: @os2-paragraphs-item-simple-2-columns-lg-padding-top-bottom 0;
+  }
+}
+
+// Print
+@media print {
+
+  // Simple - 2 columns
+  .os2-paragraphs-item-simple-2-columns {}
+}
+
+// Touch
+.touchevents {
+
+  // Simple - 2 columns
+  .os2-paragraphs-item-simple-2-columns {}
+}
+
+// No touch
+.no-touchevents {
+
+  // Simple - 2 columns
+  .os2-paragraphs-item-simple-2-columns {}
+}
+
+// --------------------------------------------------
+// Mixins
+// --------------------------------------------------
+
+// Simple - 2 columns mixin
+.os2-mixin-simple-2-columns() {}
