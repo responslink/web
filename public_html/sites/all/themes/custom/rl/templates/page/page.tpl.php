@@ -39,12 +39,12 @@
         <nav class="simple-navigation">
 
             <!-- Begin - button list -->
-            <ul class="simple-navigation-list simple-navigation-list-left">
+            <ul class="simple-navigation-list simple-navigation-list-left" style="display:flex;">
 
                 <!-- Begin - button -->
                 <li class="simple-navigation-button">
                     <a href="#" data-sidebar-toggle="left">
-                        <span class="fa icon fa-bars"></span> </a>
+                        <span class="fa icon fa-bars" style="color:#fff!important;z-index:999!important;font-size:30px;"></span> </a>
                 </li>
                 <!-- End - button -->
 
@@ -66,7 +66,7 @@
 
             <!-- Begin - main navigation -->
             <nav class="main-navigation-wrapper main-navigation-static-float">
-                <section class="main-navigation-bar">
+                <section class="main-navigation-bar navbar-fixed-top" data-fixed-at="200">
                     <div class="container">
                         <div class="row">
 

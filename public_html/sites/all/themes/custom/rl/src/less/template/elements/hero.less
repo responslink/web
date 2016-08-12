@@ -55,9 +55,10 @@
 // Hero
 .os2-hero {
   overflow: hidden;
-  border-bottom-color: @os2-hero-border-bottom-color;
+  border-bottom-color: none;
+    border: none;
   border-bottom-width: @os2-hero-border-bottom-width;
-  border-bottom-style: solid;
+  border-bottom-style: none;
 
   .os2-hero-heading {
 
@@ -89,7 +90,8 @@
 
       .os2-hero-heading-title {
         .heading-h1;
-        font-weight: @headings-font-weight;
+        font-weight: @headings-font-weight-bold;
+          font-size: 60px;
       }
     }
 
@@ -101,19 +103,47 @@
 }
 
 // Without image
+
+.os2-hero-without-image > .background-overlay-dark {
+    
+    height: 100vh!important;
+    background: rgba(56,56,71,0.5); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, rgba(56,56,71,0.5) , rgba(201,0,79,0.8)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, rgba(56,56,71,0.5), rgba(201,0,79,0.8)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, rgba(56,56,71,0.5), rgba(201,0,79,0.8)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, rgba(56,56,71,0.5) , rgba(201,0,79,0.8)); /* Standard syntax */
+   
+}
+
+
 .os2-hero-without-image {
-  background-color: @os2-hero-without-image-background-color;
+  background-image:url("https://hd.unsplash.com/photo-1448932223592-d1fc686e76ea");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+
 
   .os2-hero-heading {
+      
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
 
     .os2-hero-heading-title {
       .heading-h3;
       font-weight: @headings-font-weight-bold;
+        font-size: 60px;
+        text-align: center;
+        vertical-align: middle;
+        bottom: 0;
+        transform: translateY(50%);
+   
     }
   }
 
   .os2-hero-subheading {
-    display: none;
+    display: block;
   }
 }
 
