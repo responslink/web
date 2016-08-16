@@ -36,15 +36,15 @@
     <div class="inner-wrapper" role="document">
 
         <!-- Begin - simple navigation -->
-        <nav class="simple-navigation">
+        <nav class="simple-navigation navbar-static-top">
 
             <!-- Begin - button list -->
             <ul class="simple-navigation-list simple-navigation-list-left" style="display:flex;">
 
                 <!-- Begin - button -->
-                <li class="simple-navigation-button">
-                    <a href="#" data-sidebar-toggle="left">
-                        <span class="fa icon fa-bars" style="color:#fff!important;z-index:999!important;font-size:30px;"></span> </a>
+                <li class="simple-navigation-button" style="padding:0;display:flex;justify-content:center;align-content:center;align-items:center;">
+                    <div class="noline" data-sidebar-toggle="left" style="padding:0;display:inline-flex;background:none;cursor:pointer;margin-top:0px!important;">
+                        <span class="fa icon fa-bars" style="color:#fff!important;z-index:999!important;font-size:35px;position:relative;"></span> </div>
                 </li>
                 <!-- End - button -->
 
@@ -53,7 +53,7 @@
 
             <!-- Begin - logo -->
             <a href="<?php echo $front_page; ?>" class="simple-navigation-logo-link">
-                <img src="<?php echo $path_img . '/logo-simple-navigation.png'; ?>" class="simple-navigation-logo-image"
+                <img src="<?php echo $path_img . '/logo-simple-navigation.png'; ?>" class="simple-navigation-logo-image" style="width:300px!important;"
                      alt="<?php echo t('respons.link logo'); ?>"/>
             </a>
             <!-- End - logo -->
